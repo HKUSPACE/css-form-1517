@@ -1,0 +1,95 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="utf-8" >
+   <title>Contest Entry Form</title>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <form action="#" method="post" name="contest-form">
+<h1>&ldquo;Pimp My Shoes&rdquo; Contest Entry Form</h1>
+
+<p id="main-content">Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have <em>got</em> to go and you may be one of ten lucky winners.</p>
+
+    <fieldset>
+        <legend>Contest Entry Information</legend>
+        <ul>
+            <li>
+                <label for="field-name">Name:</label>
+                <input type="text" id="field-name" name="dataName" placeholder="Please input your full name in HKID"/>
+            </li>
+            <li><label for="field-email">Email Address:</label>
+                <input type="email" id="field-email" name="dataEmail" placeholder="Please input a valid email address."/></li>
+            <li><label for="field-tel">Telephone Number:</label>
+                <input type="text" id="field-tel" name="dataTel" placeholder="Please input your mobile phone."/></li>
+            <li><label for="field-old">My shoes are SO old…:</label>
+                <textarea id="field-old" name="dataOld" placeholder="No more than 300 characters long" ></textarea></li>
+        </ul>
+    </fieldset>
+
+<h2>Design your custom Forcefields:</h2>
+
+    <fieldset>
+        <legend>Custom Shoe Design</legend>
+        <fieldset>
+            <legend>Color <em>(choose one)</em></legend>
+            <div class="field">
+                <label for="field-color-red">Red</label>
+                <input type="radio" name="dataColor" id="field-color-red" value="Red"/>
+            </div>
+            <div class="field">
+                <label for="field-color-blue">Blue</label>
+                <input type="radio" name="dataColor" id="field-color-blue" value="Blue"/>
+            </div>
+            <div class="field">
+                <label for="field-color-black">Black</label>
+                <input type="radio" name="dataColor" id="field-color-black" value="Black"/>
+            </div>
+            <div class="field">
+                <label for="field-color-silver">Silver</label>
+                <input type="radio" name="dataColor" id="field-color-silver" value="Silver"/>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Features <em>(Choose as many as you want)</em></legend>
+            <div class="field">
+                <label for="field-features-laces">Sparkley laces</label>
+                <input type="checkbox" name="dataFeatures[]" id="field-features-laces" value="Sparkley laces" />
+            </div>
+            <div class="field">
+                <label for="field-features-logo">Metallic logo</label>
+                <input type="checkbox" name="dataFeatures[]" id="field-features-logo" value="Metallic logo" />
+            </div>
+            <div class="field">
+                <label for="field-features-heels">Light-up heels</label>
+                <input type="checkbox" name="dataFeatures[]" id="field-features-heels" value="Light-up heels" />
+            </div>
+            <div class="field">
+                <label for="field-features-mp3">MP3-enabled</label>
+                <input type="checkbox" name="dataFeatures[]" id="field-features-mp3" value="MP3-enabled" />
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Size</legend>
+            <label for="field-size">Sizes reflect standard men's sizes:</label>
+            <select name="dataSize" id="field-size">
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+            </select>
+        </fieldset>
+    </fieldset>
+    <input type="submit" value="Send" />
+    <input type="reset" value="Reset" />
+</form>
+</body>
+</html>
